@@ -1,14 +1,15 @@
 @charset "utf-8";
 
-body,h1,h2,h3,ul,p,figure {
+body,h1,h2,h3,ul,ol,p,figure {
 	margin: 0;
 	padding: 0;
 	font-family: "微软雅黑";
 }
 body {
-	/*background-color: #eee;*/
+	background-color: #fff;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei UI","Microsoft YaHei",SimHei,"宋体",simsun,sans-serif;
 }
-ul {
+ul,ol {
 	list-style: outside none none;
 }
 a {
@@ -58,50 +59,47 @@ a {
 #header .active a {
 	background-color: #000;
 }
-
-#footer{
+#footer {
 	height: 360px;
 	background-color: #222;
 	clear: both;
 	position: relative;
-	top: 50px;
+	top: 20px;
 }
-.top{
+#footer .top {
 	width: 1263px;
 	height: 281px;
 	margin: 0 auto;
 	text-align: center;
-	
 }
-.block1{
+#footer .block {
 	width: 410px;
 	height: 280px;
-	/*background-color: red;*/
 	display: inline-block;
 	text-align: left;
 	color: #ccc;
 	vertical-align: top;
 }
-.block1 h2{
+#footer h2 {
 	font-size: 24px;
 	font-weight: normal;
 	padding: 20px 0 0 20px;
 }
-.block1 hr{
-	width: 89%;
-	border: 1px dashed #333333;
+#footer hr {
+	width: 90%;
+	border: 1px dashed #333;
 }
-.block1 ul{
+#footer ul {
 	font-size: 18px;
-	color: #777777;
+	color: #777;
 	text-indent: 20px;
 	line-height: 2;
 }
-.button{
+#footer .bottom {
 	height: 80px;
-	background-color: #000000;
 	line-height: 80px;
 	text-align: center;
-	color: #777777;
+	color: #777;
+	background-color: #000;
 	border-top: 1px solid #444;
 }

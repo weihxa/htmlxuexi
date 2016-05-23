@@ -112,43 +112,43 @@
 	background-color: #eee;
 	margin: 0 0 20px 0;
 }
-#container .left {
+#container .information .left {
 	display: inline-block;
 	float: left;
 }
-#container .left li {
+#container .information .left li {
 	display: inline-block;
 	width: 150px;
 	height: 43px;
 	line-height: 43px;
 	text-align: center;
 }
-#container .left li:first-child {
+#container .information .left li:first-child {
 	background-color: #fff;
 	border-top: 2px solid #458b00;
 	position: relative;
 	left: 1px;
 }
-#container .left a {
+#container .information .left a {
 	color: #666;
 }
-#container .right {
+#container .information .right {
 	display: inline-block;
 	padding: 0 20px 0 0;
 	float: right;
 }
-#container .right li {
+#container .information .right li {
 	display: inline-block;
 	width: 60px;
 	height: 45px;
 	line-height: 45px;
 	text-align: center;
 }
-#container .right a {
+#container .information .right a {
 	padding: 3px 8px;
 	color: #666;
 }
-#container .right a.selected, #container .right a:hover {
+#container .information .right a.selected, #container .information .right a:hover {
 	background-color: #458b00;
 	color: #fff;
 }
@@ -268,7 +268,7 @@
 #container .tour time {
 	color: #458b00;
 }
-#container .more {
+#container .information .more,#container .scenery .more {
 	width: 200px;
 	height: 50px;
 	line-height: 50px;
@@ -280,4 +280,149 @@
 	cursor: pointer;
 	font-size: 18px;
 	color: #666;
+}
+
+#container .ticket,#container .scenery,#container .about{
+	color: #666666;
+	font-size: 20px;
+}
+#container .ticket h2,#container .scenery h2,#container .about h2{
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px dashed #999999;
+	padding: 0 0 15px 0;
+	font-size: 30px;
+	font-weight: normal;
+}
+#container .ticket .type{
+	margin: 20px 0 10px 0 ;
+}
+#container .ticket .type mark{
+	color: #FFFFFF;
+	background-color: #458B00;
+	padding: 5px 8px;
+	border-radius: 4px;
+	margin: 0 10px 0 16px;
+}
+#container .ticket .left{
+	width: 43%;
+	display: inline-block;
+}
+#container .ticket .right{
+	width: 43%;
+	display: inline-block;
+}
+#container .ticket .button{
+	width: 9%;
+	display: inline-block;
+}
+#container .ticket .submit {
+	display: block;
+	width: 90px;
+	height: 90px;
+	line-height: 90px;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 20px;
+	color: #FFFFFF;
+	background-color: #FF6600;
+	border: none;
+	position: relative;
+	bottom: 30px;
+	cursor: pointer;
+}
+#container .ticket .form p {
+	line-height: 3;
+}
+#container .ticket .form input {
+	width: 250px;
+	height: 30px;
+	background-color: #fff;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	color: #666;
+	padding: 5px;
+	margin: 0 0 0 16px;
+	font-size: 18px;
+}
+#container .ticket .new {
+	margin: 20px 0 0 0 ;
+}
+#container .ticket .new ul{
+	margin: 20px 0 0 0 ;
+}
+#container .ticket .new li{
+	display: inline-block;
+	padding: 5px 10px;
+}
+#container .ticket .new li:first-child{
+	padding-left:0 ;
+}
+#container .ticket .new li:nth-child(2){
+	background-color: #458b00;
+	color: #FFFFFF;
+	border-radius: 4px;
+	cursor: pointer;
+}
+#container .ticket table{
+	margin: 20px 0 0 0 ;
+	width: 100%;
+	border: 1px solid #DDDDDD;
+	border-collapse: collapse;
+}
+#container .ticket th{
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #DDDDDD;
+}
+#container .ticket td{
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #DDDDDD;
+	text-align: center;
+}
+#container .ticket tr:nth-child(2n) {
+	background-color: #fafafa;
+}
+#container .ticket tr:hover{
+	background-color: #eee;
+}
+#container .ticket .price{
+	color: #FF6600;
+}
+#container .ticket .more{
+	color: #666666;
+}
+#container .ticket .reserve {
+	display: inline-block;
+	width: 80px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 20px;
+	color: #FFFFFF;
+	background-color: #FF6600;
+	cursor: pointer;
+}
+#container .scenery figure{
+	border: 1px solid #DDDDDD;
+	display: inline-block;
+	padding: 4px;
+	border-radius:4px;
+	margin: 15px 5px 15px 0;
+	width: 435px;
+	text-align: left;
+}
+#container .scenery figcaption{
+	text-align: center;
+	padding: 5px 0;
+}
+#container .about p {
+	line-height: 2;
+	margin: 20px 0 ;
+} 
+#container .about address{
+	line-height: 1.6;
+	font-style: normal;
 }

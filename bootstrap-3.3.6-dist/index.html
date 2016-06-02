@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>实战</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+<body>
+	
+	<nav class="nav navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">XBMAN</a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<ul class="nav navbar-nav navbar-right" style="margin-top: 0;">
+					<li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-list"></span> 资讯</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-fire"></span> 案例</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> 关于</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="carousel slide" id="mycarousel" >
+		<ol class="carousel-indicators">
+			<li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#mycarousel" data-slide-to="1"></li>
+			<li data-target="#mycarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="item active" style="background-color: #223240;">
+				<img src="img/slide1.png"/>
+			</div>
+			<div class="item"style="background-color: #F5E4DC;">
+				<img src="img/slide2.png"/>
+			</div>
+			<div class="item" style="background-color: #DE2A2D;">
+				<img src="img/slide3.png"/>
+			</div>
+		</div>
+		<a href="#mycarousel" data-slide="prev" class="carousel-control left">&lsaquo;</a>
+		<a href="#mycarousel" data-slide="next" class="carousel-control right">&rsaquo;</a>
+	</div>
+	
+	
+	
+	
+	
+	<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.carousel-control').css('line-height',$('.carousel-inner img').height() + 'px');
+			$(window).resize(function(){
+				var $height = $('.carousel-inner img').eq(0).height() ||
+							  $('.carousel-inner img').eq(1).height() ||
+							  $('.carousel-inner img').eq(2).height();
+				$('.carousel-control').css('line-height',$height + 'px');
+			});
+		});
+	</script>
+</body>
+</html>

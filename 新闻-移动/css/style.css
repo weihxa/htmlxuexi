@@ -3,7 +3,7 @@
 html{
 	font-size: 625%;
 }
-body,h1,h2,h3,ul,ol,p,figure {
+body,h1,h2,h3,h4,ul,ol,p,figure {
 	margin: 0;
 	padding: 0;
 	font-family: "微软雅黑";
@@ -23,17 +23,26 @@ img {
 	display: block;
 	max-width: 100%;
 }
-div{
+div,figure,figcaption{
 	box-sizing: border-box;
 }
 .none {
 	display: none;
 }
-
+.clearfix:after {
+	content: '.';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
 #header{
 	width: 100%;
 	height: 0.45rem;
 	background-color: #333333;
+	 position: fixed;
+	 top: 0;
+	 z-index: 9999;
 }
 #header .link {
 	width: 100%;
@@ -58,6 +67,7 @@ div{
 #adver {
 	max-width: 6.4rem;
 	margin: 0 auto;
+	padding: .45rem 0 0 0;
 }
 #footer {
 	max-width: 6.4rem;
@@ -122,4 +132,124 @@ div{
 	color: #666666;
 	margin: 0.05rem 0 0.1rem 0;
 	font-size: .16rem;
+}
+
+#tour figure{
+	width: 50%;
+	float: left;
+	background-color: #EEEEEE;
+	font-size: .16rem;
+	padding: 0 0 .05rem 0;
+}
+#tour figure img{
+	padding: .02rem;
+	border-radius: .04rem;
+}
+#tour figcaption{
+	color: #666666;
+	font-size: .16rem;
+	padding: .02rem .05rem;
+}
+#tour h4{
+	font-weight: normal;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#tour p{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#tour .info{
+	padding: .1rem 0 0 0;
+	font-size: .16rem;
+}
+#tour .price{
+	color: #FF6600;
+}
+#tour .price strong{
+	letter-spacing: .01rem;
+}
+#tour .sat{
+	position: relative;
+	float: right;
+	right: .05rem;
+	font-style: normal;
+}
+
+#headline{
+	max-width: 6.4rem;
+	padding: .45rem 0 0 0 ;
+	margin: 0 auto;
+	position: relative;
+}
+#headline hgroup{
+	position: absolute;
+	top: 48%;
+	left: 10%;
+	color: #EEEEEE;
+}
+#headline h2{
+	font-size: .22rem;
+}
+#headline h3{
+	font-size: .14rem;
+}
+.list {
+	font-size: .16rem;
+	color: #666666;
+	max-width: 6.4rem;
+	margin: .15rem auto;
+	padding: 0 .1rem;
+}
+.list h2{
+	font-size: .2rem;
+	border-bottom: .01rem dashed #999;
+	padding: 0 0 .15rem 0;
+}
+
+.about p{
+	line-height: 2;
+	margin: .2rem 0;
+}
+.about address{
+	font-style: normal;
+	line-height: 1.6;
+	margin: .2rem 0;
+}
+@media  (min-width: 480px) and (max-width: 640px) {
+	#tour h2{
+		font-size: .26rem;
+	}
+	#tour h3,#footer,#tour figcaption,#tour .info,.list{
+		font-size: .16rem;
+	}
+	#footer {
+		font-size: .16rem;
+	}
+	#headline h2{
+		font-size: .22rem;
+	}
+	#headline h3{
+		font-size: .14rem;
+	}
+}
+
+@media  (max-width: 480px) {
+	#tour h2{
+		font-size: .20rem;
+	}
+	#tour h3,#tour figcaption,#tour .info,.list{
+		font-size: .14rem;
+	}
+	#footer {
+		font-size: .12rem;
+	}
+	#headline h2{
+		font-size: .18rem;
+	}
+	#headline h3{
+		font-size: .12rem;
+	}
 }

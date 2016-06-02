@@ -46,8 +46,12 @@
 				<img src="img/slide3.png"/>
 			</div>
 		</div>
-		<a href="#mycarousel" data-slide="prev" class="carousel-control left">&lsaquo;</a>
-		<a href="#mycarousel" data-slide="next" class="carousel-control right">&rsaquo;</a>
+		<a href="#mycarousel" data-slide="prev" class="carousel-control left">
+			<span class="glyphicon glyphicon-chevron-left"></span> 
+		</a>
+		<a href="#mycarousel" data-slide="next" class="carousel-control right">
+			<span class="glyphicon glyphicon-chevron-right"></span> 
+		</a>
 	</div>
 	
 	
@@ -57,15 +61,15 @@
 	<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript">
-		$(function(){
-			$('.carousel-control').css('line-height',$('.carousel-inner img').height() + 'px');
-			$(window).resize(function(){
-				var $height = $('.carousel-inner img').eq(0).height() ||
-							  $('.carousel-inner img').eq(1).height() ||
-							  $('.carousel-inner img').eq(2).height();
-				$('.carousel-control').css('line-height',$height + 'px');
-			});
-		});
+//		$(function(){
+//			$('.carousel-control').css('line-height',$('.carousel-inner img').height() + 'px');
+//			$(window).resize(function(){
+//				var $height = $('.carousel-inner img').eq(0).height() ||
+//							  $('.carousel-inner img').eq(1).height() ||
+//							  $('.carousel-inner img').eq(2).height();
+//				$('.carousel-control').css('line-height',$height + 'px');
+//			});
+//		});
 	</script>
 </body>
 </html>

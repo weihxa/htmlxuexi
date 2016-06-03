@@ -73,9 +73,9 @@ body {
 .text p {
 	font-size: 14px;
 }
-/*æ²¡æœ‰å°äºŽ768pxï¼Œæ˜¯å› ä¸ºBootstrap3ä»¥ç§»åŠ¨ç«¯ä¼˜å…ˆè®¾è®¡*/
+/*Ã»ÓÐÐ¡ÓÚ768px£¬ÊÇÒòÎªBootstrap3ÒÔÒÆ¶¯¶ËÓÅÏÈÉè¼Æ*/
 
-/* å°å±å¹•ï¼ˆå¹³æ¿ï¼Œå¤§äºŽç­‰äºŽ768pxï¼‰ */
+/* Ð¡ÆÁÄ»£¨Æ½°å£¬´óÓÚµÈÓÚ768px£© */
 @media (min-width: 768px) {
 	.tab-h2 {
 		font-size: 26px;
@@ -97,7 +97,7 @@ body {
 	}
 }
 
-/* ä¸­ç­‰å±å¹•ï¼ˆæ¡Œé¢æ˜¾ç¤ºå™¨ï¼Œå¤§äºŽç­‰äºŽ992pxï¼‰ */
+/* ÖÐµÈÆÁÄ»£¨×ÀÃæÏÔÊ¾Æ÷£¬´óÓÚµÈÓÚ992px£© */
 @media (min-width: 992px) {
 	.tab-h2 {
 		font-size: 28px;
@@ -113,7 +113,7 @@ body {
 	}
 }
 
-/* å¤§å±å¹•ï¼ˆå¤§æ¡Œé¢æ˜¾ç¤ºå™¨ï¼Œå¤§äºŽç­‰äºŽ1200pxï¼‰ */
+/* ´óÆÁÄ»£¨´ó×ÀÃæÏÔÊ¾Æ÷£¬´óÓÚµÈÓÚ1200px£© */
 @media (min-width: 1200px) {
 	.tab-h2 {
 		font-size: 30px;
